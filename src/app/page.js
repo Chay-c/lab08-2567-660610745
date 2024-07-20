@@ -1,7 +1,7 @@
-import Header from "./components/Header.jsx";
-import TaskIn from "./components/TaskIn.jsx";
-import Task from "./components/Task.jsx";
-import Footer from "./components/Footer.jsx";
+import Header from "./app/components/Header.component";
+import TaskIn from "./app/components/TaskIn.component";
+import Task from "./app/components/Task.component";
+import Footer from "./app/components/Footer.component";
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
   ]
   return (
     <div className="container mx-auto">
-      <Header/>
+      <Header />
       <div style={{ maxWidth: "400px" }} className="mx-auto">
         <TaskIn/>
         <Task {...taskslist[0]} />
