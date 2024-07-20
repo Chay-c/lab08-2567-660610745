@@ -1,5 +1,4 @@
-const footer = (props) => {
-
+const Footer = (props) => {
   return (
     <div className="mt-3">
       <p className="text-secondary text-center">
@@ -8,5 +7,4 @@ const footer = (props) => {
     </div>
   );
 };
-
-export default footer;
+export default Footer;

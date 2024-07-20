@@ -1,25 +1,28 @@
-import header from "./components/header";
-import task from "./components/task";
-import taskin from "./components/taskin";
-import footer from "./components/footer";
+import Header from "./components/Header";
+import Task from "./components/Task";
+import Footer from "./components/Footer";
+import TaskIn from "./components/TaskIn";
+
+
 export default function Home() {
   const taskslist = [
-    {id : 1, title : "Read a book" ,isdone : true},
-    {id : 2, title : "Take a shower" ,isdone : false},
-    {id : 3, title : "Sleep" ,isdone : false}
+    {id : 1, title : "Read a book" ,isDone : true},
+    {id : 2, title : "Take a shower" ,isDone : false},
+    {id : 3, title : "Sleep" ,isDone : false}
     
 
   ]
   return (
     <div className="container mx-auto">
-      <header/>
+      <Header/>
       <div style={{ maxWidth: "400px" }} className="mx-auto">
-        <taskin/>
-        <task {...taskslist[0]} />
-        <task {...taskslist[1]} />
-        <task {...taskslist[2]} />
+        <TaskIn/>
+        <Task {...taskslist[0]} />
+        <Task {...taskslist[1]} />
+        <Task {...taskslist[2]} />
       </div>
-      <footer year = "2024" fullName = "Chayangkul Chanjarupong" studentId = "660610745" />
+
+      <Footer year = "2024" fullName = "Chayangkul Chanjarupong" studentId = "660610745" />
     </div>
   );
 }
