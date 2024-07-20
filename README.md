@@ -6,7 +6,7 @@
 
 ชื่อ-สกุล : ชยางกูร จันทร์จารุพงศ์
 
-Vercel URL : https://lab08-2567-660610745.vercel.app/
+Vercel URL : 
 
 ---
 
