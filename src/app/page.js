@@ -1,7 +1,7 @@
-import Header from "./app/components/Header.component";
-import TaskIn from "./app/components/TaskIn.component";
-import Task from "./app/components/Task.component";
-import Footer from "./app/components/Footer.component";
+import Header from "./components/Header";
+import TaskIn from "./components/TaskIn";
+import Task from "./components/Task";
+import Footer from "./components/Footer";
 
 
 export default function Home() {
