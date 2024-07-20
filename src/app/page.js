@@ -1,25 +1,25 @@
-import header from "../components/header";
-import task from "@/components/task";
-import taskin from "@/components/taskin";
-import footer from "@/components/footer";
+import header from "./components/header";
+import task from "./components/task";
+import taskin from "./components/taskin";
+import footer from "./components/footer";
 export default function Home() {
+  const taskslist = [
+    {id : 1, title : "Read a book" ,isdone : true},
+    {id : 2, title : "Take a shower" ,isdone : false},
+    {id : 3, title : "Sleep" ,isdone : false}
+    
+
+  ]
   return (
-    // Main container
     <div className="container mx-auto">
-
-      {/* header section*/}
       <header/>
-
-      {/* tasks container */}
       <div style={{ maxWidth: "400px" }} className="mx-auto">
-        {/* task input */}
-        <taskin />
-        {/* task */}
-        <task />
+        <taskin/>
+        <task {...taskslist[0]} />
+        <task {...taskslist[1]} />
+        <task {...taskslist[2]} />
       </div>
-
-      {/* //footer section */}
-      <footer year="2567" fullname ="Chayangkul Chanjarupong 660610745" studentid = "660610745"/>
+      <footer year = "2024" fullName = "Chayangkul Chanjarupong" studentId = "660610745" />
     </div>
   );
 }
